@@ -12,7 +12,6 @@
 		8A0EDDBA1C494F3D00A1B100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDB81C494F3D00A1B100 /* Main.storyboard */; };
 		8A0EDDBC1C494F3D00A1B100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDBB1C494F3D00A1B100 /* Assets.xcassets */; };
 		8A0EDDBF1C494F3D00A1B100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDBD1C494F3D00A1B100 /* LaunchScreen.storyboard */; };
-		8A0EDDCF1C49518A00A1B100 /* PhotosViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +23,6 @@
 		8A0EDDBB1C494F3D00A1B100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0EDDBE1C494F3D00A1B100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0EDDC01C494F3D00A1B100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A0EDDCD1C49518A00A1B100 /* PhotosViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewControllerTableViewController.h; sourceTree = "<group>"; };
-		8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewControllerTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +101,6 @@
 		8A0EDDCA1C494F8200A1B100 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8A0EDDCD1C49518A00A1B100 /* PhotosViewControllerTableViewController.h */,
-				8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -198,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0EDDB41C494F3D00A1B100 /* AppDelegate.m in Sources */,
-				8A0EDDCF1C49518A00A1B100 /* PhotosViewControllerTableViewController.m in Sources */,
 				8A0EDDB11C494F3D00A1B100 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +342,7 @@
 				8A0EDDC51C494F3D00A1B100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
