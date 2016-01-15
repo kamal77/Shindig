@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A0EDDB11C494F3D00A1B100 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EDDB01C494F3D00A1B100 /* main.m */; };
+		8A0EDDB41C494F3D00A1B100 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EDDB31C494F3D00A1B100 /* AppDelegate.m */; };
+		8A0EDDBA1C494F3D00A1B100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDB81C494F3D00A1B100 /* Main.storyboard */; };
+		8A0EDDBC1C494F3D00A1B100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDBB1C494F3D00A1B100 /* Assets.xcassets */; };
+		8A0EDDBF1C494F3D00A1B100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0EDDBD1C494F3D00A1B100 /* LaunchScreen.storyboard */; };
+		8A0EDDCF1C49518A00A1B100 /* PhotosViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A0EDDAC1C494F3D00A1B100 /* Shindig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shindig.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0EDDB01C494F3D00A1B100 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A0EDDB21C494F3D00A1B100 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A0EDDB31C494F3D00A1B100 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A0EDDB91C494F3D00A1B100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A0EDDBB1C494F3D00A1B100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0EDDBE1C494F3D00A1B100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A0EDDC01C494F3D00A1B100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0EDDCD1C49518A00A1B100 /* PhotosViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewControllerTableViewController.h; sourceTree = "<group>"; };
+		8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewControllerTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A0EDDA91C494F3D00A1B100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A0EDDA31C494F3D00A1B100 = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDAE1C494F3D00A1B100 /* Shindig */,
+				8A0EDDAD1C494F3D00A1B100 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0EDDAD1C494F3D00A1B100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDAC1C494F3D00A1B100 /* Shindig.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A0EDDAE1C494F3D00A1B100 /* Shindig */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDCC1C494F9B00A1B100 /* Resources */,
+				8A0EDDCB1C494F9100A1B100 /* Service */,
+				8A0EDDCA1C494F8200A1B100 /* Controller */,
+				8A0EDDC91C494F7900A1B100 /* Model */,
+				8A0EDDC81C494F7000A1B100 /* View */,
+				8A0EDDC61C494F4B00A1B100 /* App */,
+				8A0EDDAF1C494F3D00A1B100 /* Supporting Files */,
+			);
+			path = Shindig;
+			sourceTree = "<group>";
+		};
+		8A0EDDAF1C494F3D00A1B100 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDC01C494F3D00A1B100 /* Info.plist */,
+				8A0EDDB01C494F3D00A1B100 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A0EDDC61C494F4B00A1B100 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDB21C494F3D00A1B100 /* AppDelegate.h */,
+				8A0EDDB31C494F3D00A1B100 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		8A0EDDC81C494F7000A1B100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8A0EDDC91C494F7900A1B100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8A0EDDCA1C494F8200A1B100 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDCD1C49518A00A1B100 /* PhotosViewControllerTableViewController.h */,
+				8A0EDDCE1C49518A00A1B100 /* PhotosViewControllerTableViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8A0EDDCB1C494F9100A1B100 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		8A0EDDCC1C494F9B00A1B100 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0EDDB81C494F3D00A1B100 /* Main.storyboard */,
+				8A0EDDBB1C494F3D00A1B100 /* Assets.xcassets */,
+				8A0EDDBD1C494F3D00A1B100 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A0EDDAB1C494F3D00A1B100 /* Shindig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0EDDC31C494F3D00A1B100 /* Build configuration list for PBXNativeTarget "Shindig" */;
+			buildPhases = (
+				8A0EDDA81C494F3D00A1B100 /* Sources */,
+				8A0EDDA91C494F3D00A1B100 /* Frameworks */,
+				8A0EDDAA1C494F3D00A1B100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shindig;
+			productName = Shindig;
+			productReference = 8A0EDDAC1C494F3D00A1B100 /* Shindig.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A0EDDA41C494F3D00A1B100 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = KamalFlik;
+				TargetAttributes = {
+					8A0EDDAB1C494F3D00A1B100 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 8A0EDDA71C494F3D00A1B100 /* Build configuration list for PBXProject "Shindig" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A0EDDA31C494F3D00A1B100;
+			productRefGroup = 8A0EDDAD1C494F3D00A1B100 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A0EDDAB1C494F3D00A1B100 /* Shindig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A0EDDAA1C494F3D00A1B100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0EDDBF1C494F3D00A1B100 /* LaunchScreen.storyboard in Resources */,
+				8A0EDDBC1C494F3D00A1B100 /* Assets.xcassets in Resources */,
+				8A0EDDBA1C494F3D00A1B100 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A0EDDA81C494F3D00A1B100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0EDDB41C494F3D00A1B100 /* AppDelegate.m in Sources */,
+				8A0EDDCF1C49518A00A1B100 /* PhotosViewControllerTableViewController.m in Sources */,
+				8A0EDDB11C494F3D00A1B100 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A0EDDB81C494F3D00A1B100 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0EDDB91C494F3D00A1B100 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0EDDBD1C494F3D00A1B100 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0EDDBE1C494F3D00A1B100 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A0EDDC11C494F3D00A1B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A0EDDC21C494F3D00A1B100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A0EDDC41C494F3D00A1B100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shindig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamalflik.Shindig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A0EDDC51C494F3D00A1B100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shindig/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamalflik.Shindig;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A0EDDA71C494F3D00A1B100 /* Build configuration list for PBXProject "Shindig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0EDDC11C494F3D00A1B100 /* Debug */,
+				8A0EDDC21C494F3D00A1B100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0EDDC31C494F3D00A1B100 /* Build configuration list for PBXNativeTarget "Shindig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0EDDC41C494F3D00A1B100 /* Debug */,
+				8A0EDDC51C494F3D00A1B100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A0EDDA41C494F3D00A1B100 /* Project object */;
+}
