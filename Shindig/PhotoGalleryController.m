@@ -8,6 +8,8 @@
 
 #import "PhotoGalleryController.h"
 #import "FlickrSearchService.h"
+#import "ThumbnailTableViewCell.h"
+#import "FlickrPhoto.h"
 
 @interface PhotoGalleryController ()
 
@@ -32,7 +34,12 @@
 #pragma mark - delegate (protocol implementation) methods
 
 -(void) finishedDownloadingFlickrPhoto:(NSMutableArray *)flickrphotos {
-    NSLog(@"In finish downloading ...");
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        self.photos = flickrphotos;
+        [self.tableView reloadData];
+    });
    
 }
 
@@ -48,24 +55,28 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return (self.photos.count > 0) ? 1 : 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.photos count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"ThumbnailViewCell";
+    ThumbnailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
     
+    FlickrPhoto *photo = (self.photos)[indexPath.row];
+    /*NSData *imageData =  [NSData dataWithContentsOfURL:[NSURL URLWithString:photo.photoUrl]
+                                              options:0  error:nil];
+    cell.photoImgView.image = [UIImage imageWithData:imageData]; */
+    cell.titleLabel.text = photo.title;
+    cell.photoImgView.image = photo.thumbnail;
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -19,6 +19,6 @@
 @property (strong, nonatomic) NSString *serverId;
 @property (strong, nonatomic) NSString *photoUrl;
 @property (strong, nonatomic) NSString *detailPhotoUrl;
-
+@property (copy, nonatomic) UIImage *thumbnail;
 
 @end

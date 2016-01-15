@@ -48,8 +48,28 @@ static NSString *const NoJsonCallBack = @"1";
         //Do Something...
     }
     else {
-      
+        NSArray *objPhotos = searchResultsDict[@"photos"][@"photo"];
+        NSMutableArray *flickrPhotos = [@[] mutableCopy];
         
+        for (NSMutableDictionary *objPhoto in objPhotos) {
+            FlickrPhoto *photo = [[FlickrPhoto alloc] init];
+            photo.farmId = objPhoto[@"farm"];
+            photo.serverId = objPhoto[@"server"] ;
+            photo.secretId = objPhoto[@"secret"];
+            photo.photoId = objPhoto[@"id"];
+            photo.title = objPhoto[@"title"];
+            // NSLog(@"title= %@",photo.photoUrl);
+            // NSData *imageData = [NSData dataWithContentsOfURL:photo.photoUrl options:0 error:&error];
+            
+            
+            NSData *imageData =  [NSData dataWithContentsOfURL:[NSURL URLWithString:photo.photoUrl]
+                                                       options:0  error:nil];
+            photo.thumbnail = [UIImage imageWithData:imageData];
+            
+            [flickrPhotos addObject:photo];
+        }
+        
+        [self.delegate finishedDownloadingFlickrPhoto:flickrPhotos];
         
     }
     
