@@ -32,8 +32,8 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMm-6z-uvB">
                                             <rect key="frame" x="10" y="5" width="110" height="100"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8o-5k-1EY">
-                                            <rect key="frame" x="137" y="29" width="396" height="40"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8o-5k-1EY">
+                                            <rect key="frame" x="120" y="29" width="160" height="40"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -43,6 +43,7 @@
                                 <connections>
                                     <outlet property="photoImgView" destination="VMm-6z-uvB" id="aAm-bB-buy"/>
                                     <outlet property="titleLabel" destination="h8o-5k-1EY" id="Rar-o2-pBe"/>
+                                    <segue destination="EX7-gf-NaV" kind="show" identifier="showPhotoDetails" id="5iZ-Xv-qEw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -56,6 +57,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLJ-u9-cC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1472" y="359"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="vLC-z1-VlG">
+            <objects>
+                <viewController title="Photo Detail View Controller" id="EX7-gf-NaV" customClass="PhotoDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afV-i3-rcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vt0-U6-47x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VAS-2E-FZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-tI-DsV">
+                                <rect key="frame" x="15" y="15" width="459" height="310"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="ISe-tI-DsV" id="3N8-k2-iSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1I-Lu-iGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153" y="354"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hZr-Rp-TRY">

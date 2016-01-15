@@ -16,6 +16,7 @@
 		8A0EDDD81C495B2200A1B100 /* ThumbnailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0EDDD71C495B2200A1B100 /* ThumbnailTableViewCell.m */; };
 		8AC577541C495D48004280F1 /* FlickrSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC577531C495D48004280F1 /* FlickrSearchService.m */; };
 		8AC577561C496071004280F1 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC577551C496071004280F1 /* FlickrPhoto.m */; };
+		8AC5775B1C4969CF004280F1 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC5775A1C4969CF004280F1 /* PhotoDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		8AC577551C496071004280F1 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
 		8AC577571C496084004280F1 /* FlickrPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
 		8AC577581C49618D004280F1 /* FlickrDownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrDownloadDelegate.h; sourceTree = "<group>"; };
+		8AC577591C4969CF004280F1 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		8AC5775A1C4969CF004280F1 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 			children = (
 				8A0EDDD31C4958EF00A1B100 /* PhotoGalleryController.h */,
 				8A0EDDD41C4958EF00A1B100 /* PhotoGalleryController.m */,
+				8AC577591C4969CF004280F1 /* PhotoDetailViewController.h */,
+				8AC5775A1C4969CF004280F1 /* PhotoDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				8AC577561C496071004280F1 /* FlickrPhoto.m in Sources */,
 				8A0EDDB11C494F3D00A1B100 /* main.m in Sources */,
 				8AC577541C495D48004280F1 /* FlickrSearchService.m in Sources */,
+				8AC5775B1C4969CF004280F1 /* PhotoDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
