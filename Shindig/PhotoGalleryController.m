@@ -7,8 +7,12 @@
 //
 
 #import "PhotoGalleryController.h"
+#import "FlickrSearchService.h"
 
 @interface PhotoGalleryController ()
+
+@property (nonatomic, strong) FlickrSearchService *flickrService;
+@property (nonatomic, strong) NSArray *photos;
 
 @end
 
@@ -16,12 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.flickrService = [[FlickrSearchService alloc] init];
+    self.flickrService.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,9 +29,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - delegate (protocol implementation) methods
+
+-(void) finishedDownloadingFlickrPhoto:(NSMutableArray *)flickrphotos {
+    NSLog(@"In finish downloading ...");
+   
+}
+
 #pragma mark - Search functions
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"In here...");
+    [self.flickrService searchPhotos:searchBar.text];
     [searchBar resignFirstResponder];
 }
 

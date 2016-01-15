@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlickrDownloadDelegate.h"
 
-@interface PhotoGalleryController : UITableViewController <UISearchBarDelegate>
+@interface PhotoGalleryController : UITableViewController <UISearchBarDelegate, FlickrDownloadDelegate>
 
 @end
