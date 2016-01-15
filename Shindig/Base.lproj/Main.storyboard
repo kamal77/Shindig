@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Photo Search-->
@@ -29,16 +30,50 @@
                                     <rect key="frame" x="0.0" y="0.0" width="567" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMm-6z-uvB">
-                                            <rect key="frame" x="10" y="5" width="110" height="100"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8o-5k-1EY">
-                                            <rect key="frame" x="120" y="29" width="160" height="40"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8o-5k-1EY">
+                                            <rect key="frame" x="110" y="8" width="449" height="84"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VMm-6z-uvB">
+                                            <rect key="frame" x="8" y="8" width="100" height="84"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="84" id="Kas-WC-EMj"/>
+                                                <constraint firstAttribute="width" constant="100" id="TXK-gU-wmx"/>
+                                                <constraint firstAttribute="height" constant="84" id="TXL-84-hZe"/>
+                                                <constraint firstAttribute="width" constant="100" id="ojQ-Xf-9aY"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="TXL-84-hZe"/>
+                                                    <exclude reference="ojQ-Xf-9aY"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VMm-6z-uvB" firstAttribute="top" secondItem="a7A-q8-iv9" secondAttribute="topMargin" id="0nw-gw-ZbT"/>
+                                        <constraint firstItem="h8o-5k-1EY" firstAttribute="leading" secondItem="VMm-6z-uvB" secondAttribute="trailing" constant="2" id="1Ay-ZF-DFJ"/>
+                                        <constraint firstItem="h8o-5k-1EY" firstAttribute="trailing" secondItem="a7A-q8-iv9" secondAttribute="trailingMargin" id="7eH-gU-w0l"/>
+                                        <constraint firstItem="VMm-6z-uvB" firstAttribute="leading" secondItem="a7A-q8-iv9" secondAttribute="leadingMargin" id="HdI-Im-iMX"/>
+                                        <constraint firstItem="VMm-6z-uvB" firstAttribute="leading" secondItem="a7A-q8-iv9" secondAttribute="leadingMargin" id="J6j-9y-lF9"/>
+                                        <constraint firstItem="VMm-6z-uvB" firstAttribute="top" secondItem="a7A-q8-iv9" secondAttribute="topMargin" id="Lw9-Zm-YFV"/>
+                                        <constraint firstItem="h8o-5k-1EY" firstAttribute="leading" secondItem="VMm-6z-uvB" secondAttribute="trailing" constant="2" id="MaD-YP-OL6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="h8o-5k-1EY" secondAttribute="bottom" id="Mie-Tm-5v8"/>
+                                        <constraint firstItem="h8o-5k-1EY" firstAttribute="top" secondItem="a7A-q8-iv9" secondAttribute="topMargin" id="SaQ-mH-F8w"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VMm-6z-uvB" secondAttribute="bottom" id="kAG-49-EDg"/>
+                                        <constraint firstItem="h8o-5k-1EY" firstAttribute="leading" secondItem="VMm-6z-uvB" secondAttribute="trailing" constant="2" id="rrk-YZ-kSD"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="HdI-Im-iMX"/>
+                                            <exclude reference="Lw9-Zm-YFV"/>
+                                            <exclude reference="kAG-49-EDg"/>
+                                            <exclude reference="MaD-YP-OL6"/>
+                                            <exclude reference="rrk-YZ-kSD"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="photoImgView" destination="VMm-6z-uvB" id="aAm-bB-buy"/>
@@ -70,11 +105,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-tI-DsV">
-                                <rect key="frame" x="15" y="15" width="459" height="310"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISe-tI-DsV">
+                                <rect key="frame" x="20" y="72" width="560" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="ZDj-ug-iIx"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ISe-tI-DsV" firstAttribute="leading" secondItem="VAS-2E-FZ9" secondAttribute="leadingMargin" id="Y04-IT-Ose"/>
+                            <constraint firstItem="ISe-tI-DsV" firstAttribute="top" secondItem="afV-i3-rcV" secondAttribute="bottom" constant="8" id="g52-Cg-rtP"/>
+                            <constraint firstItem="ISe-tI-DsV" firstAttribute="trailing" secondItem="VAS-2E-FZ9" secondAttribute="trailingMargin" id="wBF-TU-ihs"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="photoImageView" destination="ISe-tI-DsV" id="3N8-k2-iSO"/>
